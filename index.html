@@ -28,8 +28,8 @@
 			font-size:50px;
 			color: rgb(36, 212, 212);
 		}
-		.bg        {background-image: linear-gradient(rgba(59, 55, 55, 0.237),rgba(59, 55, 55, 0.237)	), url("imagee.jpg");
-			    height: 90%;
+		.bg        {background-image: url("imagee11.jpg");
+			    height: 80%;
 			    width: 100%;
 			    position: cover;
 			    
@@ -41,7 +41,7 @@
 			   }	
 		.quote {
 			position: absolute ;
-			top: 35%;
+			top: 55%;
   			right: 35%;
   			font-size: 40px;
   			color: #f8f1f1;
@@ -85,7 +85,7 @@ bottom: 0px;}
 			<li><a href="aboutme.html">ABOUT ME</a></li>
 			<li><a href="recommendation.html">RECOMMENDATION LETTER</a></li>
 			<li><a href="vas.html">EXTRACURRICULAR</a></li>
-			<li><a href="CV.html">PORFOLIO</a></li>
+			<li><a href="CV.html">PORTFOLIO</a></li>
 		</ul>
 	</nav>	
 	</header>
@@ -107,38 +107,82 @@ bottom: 0px;}
 </br>
 <div class="text-col rounded-corner-extra" style="background-color: #4d5f7a3d;margin-left:15%; margin-right:15%;" >
 <h4 style="margin-left: 2%; margin-right: 2%;font-size: 25px;">
-	Meet a  soul who believes that if you put your heart and soul into your work with extraordinary dedication, you will be rewarded. Fueled by the notion that <span class="highlight">passion and consistency</span> are the keys to unlocking boundless potential, he confronts every task with <span class="highlight">tireless commitment</span>. For him, the quotation: 
+	Meet a  soul who believes that if you put your heart and soul into your work with extraordinary dedication, you will be rewarded. Fueled by the notion that <span class="highlight" style="font-weight: bold">passion and consistency</span> are the keys to unlocking boundless potential, he confronts every task with <span class="highlight" style="font-weight: bold">tireless commitment</span>. For him, the quotation: 
 	<center>
 		<em>
 			<q style="margin-top: 1.8em; margin-bottom: 1.8em;">
-			  <span class="highlight">If you care about what you do and work hard at it,</span>
-				</br>there isn't anything you can't do if you want to
+			  <span class="highlight" style="font-weight: bold">If you care about what you do and work hard at it,
+				</br>there isn't anything you can't do if you want to</span>
 			</q>
 		  </em>
 	</center>
-	is more than a saying; it's a guiding principle that <span class="highlight">drives his approach to life.</span> Shape him into the person he is today.
+	is more than a saying; it's a guiding principle that <span class="highlight" style="font-weight: bold">drives his approach to life.</span> Shape him into the person he is today.
 </br></br>
-After finishing high school, he remains excited and determined to continue his journey at RMIT University. With the same enthusiasm and dedication that have defined his path so far, he looks forward to taking on new challenges and opportunities at RMIT. He is eager to expand his knowledge, improve his skills, and make meaningful contributions, all while staying true to the values that have shaped his success thus far.
+After finishing high school, he remains excited and determined to continue his journey at  <span class="highlight" style="font-weight: bold">RMIT University</span>. With the same enthusiasm and dedication that have defined his path so far, he looks forward to taking on new challenges and opportunities at RMIT. He is eager to expand his knowledge, improve his skills, and make meaningful contributions, all while staying true to the values that have shaped his success thus far.
 </h4>
 </div>
 </br>
-<div class="social-icons">
-    <a href="https://www.facebook.com/kiet.hoangducanh" target="_blank">
-      <i class="fa-brands fa-facebook"></i>
-    </a>
-    <a href="https://www.instagram.com/hoangducanhkiet/" target="_blank">
-      <i class="fa-brands fa-square-instagram"></i>
-    </a>
-    <a href="https://www.youtube.com/@kiethoang1228" target="_blank">
-      <i class="fa-brands fa-youtube"></i>
-    </a>	
-    <a href="mailto:hoangducanhkiet46.com">
-      <i class="fa-solid fa-envelope"></i>
-    </a>
-  </div>
-</center>
+	<br>
+	<div>
+		<h1>GET IN TOUCH!</h1>
+	</div>
+	<br>
+	<div class="container">
+		<div class="flex-container">
+		  <div class="contact-info">
+			<h4 style="font-weight: bold; font-size: 40px;">CONTACT</h4>
+			<h4>Hoang Duc Anh Kiet</h4>
+			<br>
+			<h4>Mobile: (+84) 765-540-846</h4>
+			<h4>hoangducanhkiet46@gmail.com</h4>
+		  </div>
+		  <form>
+			<span style="text-shadow: 0px 0px 5px #ea00ffe9;font-weight: bold;">
+			  <label for="name" style="width: 100px;">Name</label>
+			</span>
+			<input type="text" id="name" name="firstname" placeholder="Your name*" style="width: 290px;">
+			<br>
+			<span style="text-shadow: 0px 0px 5px #ea00ffe9;font-weight: bold;">
+			  <label for="email" style=" width: 100px;">Email</label>
+			</span>
+			<input type="email" name="email" placeholder="Your email*" style="width: 290px;">
+			<br>
+			<span style="text-shadow: 0px 0px 5px #ea00ffe9;font-weight: bold;">
+			  <label for="message" style="width: 100px;">Message</label>
+			</span>
+			<br>
+			<div style="display: flex; ">
+			  <textarea id="message" name="message" placeholder="Enter your text*" style="width: 290px; height: 100px; resize: none;"></textarea>
+			  <button onclick="sendMail(); return false" style="height: 100px; margin-left: 10px;">Send</button>
+			</div>
+		  </form>
+		</div>
+	  </div>
+	  <br>
+	  <style>
+		.container {
+    		margin: 0 auto;
+    		width: 45%; /* adjust the width to your liking */
+    		text-align: center;
+		}
+		.flex-container {
+		  display: flex;
+		  flex-wrap: wrap;
+		  justify-content: space-between;
+		}
+	</style>
+	<script>
+	function sendMail() {
+	  var link = "mailto:hoangducanhkiet46@gmail.com"
+				 + "&subject=" + escape("This is my subject")
+				 + "&body=" + escape(document.getElementById('message').value)
+	  ;
+	  
+	  window.location.href = link;
+	}
+	</script>
 
-
+<br>
 <footer>
 	<p> Hoang Duc Anh Kiet, thank you for visiting!</p>
 </footer>

@@ -174,3 +174,7 @@ h10{
   margin-right: -0.5%;
 }
 
+label {
+  color: white;
+  cursor: pointer;
+}
